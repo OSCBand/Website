@@ -70,7 +70,7 @@ header h2 {
 
 /* let items wrap but keep each link's words together; use a flexible basis */
 .menu li {
-    flex: 0 1 150px; /* base width but allow wrapping to next row */
+    flex: -1 1 150px; /* base width but allow wrapping to next row */
 }
 
 a {
@@ -90,29 +90,6 @@ a:visited, a:hover{
     box-sizing: border-box;
     white-space: nowrap; /* prevent words inside links from wrapping */
 }
-
-/* On very small screens stack the nav items vertically (no scrollbar) */
-@media (max-width: 700px) {
-    .menu {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .menu li {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-    .menu a {
-        display: block;
-        text-align: center;
-    }
-    section img {
-        float: none;
-        display: block;
-        max-width: 90%;
-        margin: 0 auto 1em auto;
-    }
-}
-
 
 .menu a.active {
     border-color: white;
@@ -150,4 +127,42 @@ footer p {
     text-align: center;
     font-size: 85%;
     color: white;
+}
+
+@media (max-width: 700px) {
+
+    /* Stack nav items cleanly */
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 6px 0;
+        margin: 0;
+    }
+
+    /* FIX: stop image from squeezing text */
+    section img {
+        float: none !important;
+        clear: both !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 1em auto !important;
+    }
+
+    /* FIX: prevent narrow text column */
+    section {
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
 }
