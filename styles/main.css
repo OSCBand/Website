@@ -101,16 +101,19 @@ a:visited, a:hover{
 /* On very small screens stack the nav items vertically (no scrollbar) */
 @media (max-width: 600px) {
     .menu {
-        flex-direction: row;
+        flex-direction: column;
         align-items: stretch;
     }
+
     .menu li {
-        flex: 0 0 auto;
         width: 100%;
     }
+
     .menu a {
         display: block;
+        width: 100%;
         text-align: center;
+        padding: 10px 0;
     }
 }
 
@@ -157,4 +160,5 @@ footer p {
     font-size: 85%;
     color: white;
 }
+
 
