@@ -52,13 +52,6 @@ header h2 {
     color: rgb(0, 0, 0);
     padding-top: 0;
 }
-/*
-header h3 {
-    font-size: 150%;
-    padding-top: .25em;
-    color: white;
-}
-*/
 /* the styles for the nav element*/
 .menu {
     list-style-type: none;
@@ -99,9 +92,9 @@ a:visited, a:hover{
 }
 
 /* On very small screens stack the nav items vertically (no scrollbar) */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .menu {
-        flex-direction: row;
+        flex-direction: column;
         align-items: stretch;
     }
     .menu li {
@@ -119,6 +112,7 @@ a:visited, a:hover{
         margin: 0 auto 1em auto;
     }
 }
+
 
 .menu a.active {
     border-color: white;
@@ -157,5 +151,3 @@ footer p {
     font-size: 85%;
     color: white;
 }
-
-
