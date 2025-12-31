@@ -112,11 +112,11 @@ a:visited, a:hover{
         display: block;
         text-align: center;
     }
-    section h1{
+    section img {
+        float: none;
         display: block;
-    }
-    section p{
-        display: block;
+        max-width: 90%;
+        margin: 0 auto 1em auto;
     }
 }
 
@@ -157,4 +157,5 @@ footer p {
     font-size: 85%;
     color: white;
 }
+
 
