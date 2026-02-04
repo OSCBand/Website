@@ -94,9 +94,44 @@ a:visited, a:hover{
 .menu a.active {
     border-color: white;
 }
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.member h2 {
+  margin-top: 0.75rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.member p {
+  margin: 0.25rem 0 0;
+}
 
 
-
+/*
+.bandphoto {
+    width: 10%;
+    height: auto;
+    margin-top: 1em;
+    margin-right: 10em;
+    box-sizing: border-box;
+    float: right;
+}
+*/
 /* the styles for the main element  */
 main {
     clear: left;
