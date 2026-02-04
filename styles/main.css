@@ -168,7 +168,7 @@ footer p {
 
     /* Stack nav items cleanly */
     *{
-        font: bold;
+        font-weight: bold;
     }
     .menu {
         flex-direction: column;
@@ -204,4 +204,5 @@ footer p {
         font-size: 1em;
     }
 }
+
 
