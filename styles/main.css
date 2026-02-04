@@ -167,6 +167,9 @@ footer p {
 @media (max-width: 700px) {
 
     /* Stack nav items cleanly */
+    *{
+        font: bold;
+    }
     .menu {
         flex-direction: column;
         align-items: stretch;
@@ -201,3 +204,4 @@ footer p {
         font-size: 1em;
     }
 }
+
